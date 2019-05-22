@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ClickOnScrollIssue.Views.ItemsPage"
+              Title="{Binding Title}"
+             x:Name="BrowseItemsPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Clicked="AddItem_Clicked" />
+    </ContentPage.ToolbarItems>
+
+    <ScrollView>
+        <StackLayout CompressedLayout.IsHeadless="true" Orientation="Vertical">
+            <Button x:Name="FirstButton" HeightRequest="200" Text="Button 1" Clicked="AddItem_Clicked" TextColor="Gray" BackgroundColor="Yellow" />
+            <Button x:Name="SecondButton" HeightRequest="200" Text="Button 2" Clicked="AddItem_Clicked" TextColor="Gray" BackgroundColor="Green" />
+            <Button x:Name="ThirdButton" HeightRequest="200" Text="Button 3" Clicked="AddItem_Clicked" TextColor="Gray" BackgroundColor="Blue" />
+            <Button x:Name="FourthButton" HeightRequest="200" Text="Button 4" Clicked="AddItem_Clicked" TextColor="Gray" BackgroundColor="Purple" />
+            <Button x:Name="FifthButton" HeightRequest="200" Text="Button 5" Clicked="AddItem_Clicked" TextColor="Gray" BackgroundColor="Red" />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
